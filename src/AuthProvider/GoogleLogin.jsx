@@ -3,13 +3,10 @@ import auth from '../firebase/firebase.config';
 import { useNavigate } from 'react-router-dom';
 const GoogleLogin = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-  const navigate = useNavigate();
+
   const handleGoogleLogin = () => {
     signInWithGoogle();
   };
-  if (user) {
-    navigate('/');
-  }
 
   return (
     <div>
