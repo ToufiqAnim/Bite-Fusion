@@ -79,6 +79,9 @@ const Navbar = () => {
               </div>
             </div>
             <div>
+              <Link to={'/dashbord'}>Dashboard</Link>
+            </div>
+            <div>
               <button className="btn" onClick={handleLogout}>
                 Logout
               </button>

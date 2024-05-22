@@ -2,6 +2,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../firebase/firebase.config';
 import { Navigate } from 'react-router-dom';
 
+// eslint-disable-next-line react/prop-types
 const PrivateRoutes = ({ children }) => {
   const [user, loading] = useAuthState(auth);
 
@@ -10,9 +11,9 @@ const PrivateRoutes = ({ children }) => {
   }
 
   if (!user) {
-    return <Navigate to={'/login'} state={{ form: location }} replace />;
+    return <Navigate to={'/login'} />;
   }
-  return <div></div>;
+  return children;
 };
 
 export default PrivateRoutes;
