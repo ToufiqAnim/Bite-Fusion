@@ -8,9 +8,10 @@ import auth from '../firebase/firebase.config';
 import { useEffect } from 'react';
 
 const Register = () => {
-  const [user] = useAuthState(auth);
+  const userInfo = useAuthState(auth);
   const navigate = useNavigate();
-  const [createUserWithEmailAndPassword] =
+
+  const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
   const handleSignup = (e) => {
     e.preventDefault();
@@ -20,10 +21,14 @@ const Register = () => {
     createUserWithEmailAndPassword(email, password);
   };
   useEffect(() => {
-    if (user) {
+    if (userInfo[0]) {
       navigate('/');
     }
-  }, [navigate, user]);
+    if (error) {
+      console.log(error?.message);
+    }
+  }, [navigate, userInfo]);
+  console.log(user, loading);
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
