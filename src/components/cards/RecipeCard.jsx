@@ -4,10 +4,10 @@
 export default function RecepiCard({ recipe }) {
   return (
     <div className="card  bg-white text-black shadow-xl">
-      {/*    <figure>
-        <img src={pizza} alt="food" className="max-w-50" />
-      </figure> */}
-      <div className="card-body">
+      <figure>
+        <img src={recipe?.image} alt="food" className="max-w-50" />
+      </figure>
+      <div className="card-body border ">
         <h2 className="card-title">{recipe?.title}</h2>
         <h2 className="card-title">{recipe?.price}</h2>
         <p>

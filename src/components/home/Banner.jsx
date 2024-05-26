@@ -1,15 +1,25 @@
 const Banner = () => {
   return (
-    <div className="hero h-[600px] bg-white">
-      <div className="hero-content text-center text-black">
+    <div
+      className="hero text-justify h-[600px]"
+      style={{
+        backgroundImage:
+          'url(https://preview.colorlib.com/theme/marco/img/hero-bg.jpg.webp)',
+      }}
+    >
+      <div className=""></div>
+      <div className="text-left text-white">
         <div className="max-w-md">
-          <h1 className="text-5xl font-bold">Hello there</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+          <p className="mb-5">WIDE OPTIONS OF CHOICE</p>
+          <h1 className="mb-5 text-5xl font-bold">Delicious Recipes</h1>
+          <p className="mb-5">
+            inappropriate behavior is often laughed off as “boys will be boys,”
+            women face higher conduct standards especially in the workplace.
+            That’s why it’s crucial that, as women.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="px-6 py-3 bg-red-600 border-none text-white rounded-none">
+            Check Our Menu
+          </button>
         </div>
       </div>
     </div>
