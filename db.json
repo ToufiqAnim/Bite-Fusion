@@ -1,0 +1,126 @@
+{
+  "recipe": [
+    {
+      "id": "1",
+      "title": "Spaghetti Carbonara",
+      "price": 12.99,
+      "description": "Classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+      "image": "https://static01.nyt.com/images/2020/05/07/dining/07Appt-spaghetti-carbonara/07Appt-spaghetti-carbonara-articleLarge.jpg",
+      "category": 1
+    },
+    {
+      "id": "2",
+      "title": "Margherita Pizza",
+      "price": 10.5,
+      "description": "Traditional pizza topped with tomatoes, mozzarella cheese, and fresh basil.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Margherita_Recipe.jpg/800px-Margherita_Recipe.jpg",
+      "category": 1
+    },
+    {
+      "id": "3",
+      "title": "Lasagna",
+      "price": 14.99,
+      "description": "Hearty Italian dish made with layers of pasta, meat sauce, and cheese.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Lasagne_-_stonesoup.jpg/1024px-Lasagne_-_stonesoup.jpg",
+      "category": 1
+    },
+    {
+      "id": "4",
+      "title": "Chicken Tikka Masala",
+      "price": 15,
+      "description": "Popular Indian dish made with roasted marinated chicken chunks in spiced curry sauce.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Chicken_tikka_masala.jpg/1024px-Chicken_tikka_masala.jpg",
+      "category": 2
+    },
+    {
+      "id": "5",
+      "title": "Paneer Butter Masala",
+      "price": 13.5,
+      "description": "Creamy and rich dish made with paneer (Indian cottage cheese) in a spiced tomato sauce.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Paneer_Butter_Masala.jpg/800px-Paneer_Butter_Masala.jpg",
+      "category": 2
+    },
+    {
+      "id": "6",
+      "title": "Biryani",
+      "price": 16,
+      "description": "Fragrant and flavorful rice dish made with spices, basmati rice, and meat or vegetables.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chicken_Biryani.jpg/1024px-Chicken_Biryani.jpg",
+      "category": 2
+    },
+    {
+      "id": "7",
+      "title": "Caesar Salad",
+      "price": 8.99,
+      "description": "Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Caesar_salad_%282%29.jpg/1024px-Caesar_salad_%282%29.jpg",
+      "category": 3
+    },
+    {
+      "id": "8",
+      "title": "Greek Salad",
+      "price": 9.5,
+      "description": "Refreshing salad made with cucumbers, tomatoes, olives, feta cheese, and olive oil.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Greek_salad_%28horiatiki%29.jpg/1024px-Greek_salad_%28horiatiki%29.jpg",
+      "category": 3
+    },
+    {
+      "id": "9",
+      "title": "Quinoa Salad",
+      "price": 10,
+      "description": "Healthy salad made with quinoa, fresh vegetables, and a lemon vinaigrette.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Quinoa_salad.jpg/1024px-Quinoa_salad.jpg",
+      "category": 3
+    },
+    {
+      "id": "10",
+      "title": "Chocolate Cake",
+      "price": 6.5,
+      "description": "Rich and moist chocolate cake topped with creamy chocolate frosting.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chocolate_cake_with_chocolate_frosting.jpg/1024px-Chocolate_cake_with_chocolate_frosting.jpg",
+      "category": 4
+    },
+    {
+      "id": "11",
+      "title": "Cheesecake",
+      "price": 7,
+      "description": "Creamy and smooth cheesecake with a graham cracker crust and a hint of lemon.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/NYC_Cheesecake.jpg/1024px-NYC_Cheesecake.jpg",
+      "category": 4
+    },
+    {
+      "id": "12",
+      "title": "Tiramisu",
+      "price": 7.5,
+      "description": "Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Tiramisu_-_Ristobar_Palladio.jpg/1024px-Tiramisu_-_Ristobar_Palladio.jpg",
+      "category": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Italian"
+    },
+    {
+      "id": 2,
+      "title": "Indian"
+    },
+    {
+      "id": 3,
+      "title": "Salads"
+    },
+    {
+      "id": 4,
+      "title": "Desserts"
+    },
+    {
+      "id": 5,
+      "title": "Mexican"
+    },
+    {
+      "id": 6,
+      "title": "Chinese"
+    }
+  ]
+}

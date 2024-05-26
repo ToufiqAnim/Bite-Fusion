@@ -8,7 +8,7 @@ export default function DashbaordLayout() {
     await signOut();
   };
   return (
-    <div className="drawer lg:drawer-open">
+    <div className="drawer lg:drawer-open bg-white">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center justify-center">
         {/* Page content here */}
@@ -25,7 +25,7 @@ export default function DashbaordLayout() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-60 min-h-screen bg-base-200 text-base-content flex flex-col justify-between">
+        <ul className="menu p-4 w-52 min-h-screen bg-base-200 text-base-content flex flex-col justify-between">
           {/* Sidebar content here */}
           <div>
             <li>
