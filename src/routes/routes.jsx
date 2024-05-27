@@ -11,6 +11,7 @@ import DashboardHome from '../pages/dashboard/DashboardHome';
 import ManageAllRecipe from '../pages/dashboard/ManageAllRecipe';
 import Dashbaord from '../layout/Dashboard';
 import AddRecipe from '../pages/dashboard/AddRecipe';
+import EditRecipe from '../pages/dashboard/EditRecipe';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: 'add-recipes',
         element: <AddRecipe />,
+      },
+      {
+        path: 'edit-recipe/:id',
+        element: <EditRecipe />,
       },
     ],
   },

@@ -10,7 +10,7 @@ const RecipeRow = ({ recipe }) => {
       <td>{recipe?.category}</td>
       <td className="flex gap-4">
         <Link
-          to={`/dashboard/edit-recipe/${recipe?.id}`}
+          to={`/dashbord/edit-recipe/${recipe?.id}`}
           className="btn btn-xs btn-neutral"
         >
           Edit
