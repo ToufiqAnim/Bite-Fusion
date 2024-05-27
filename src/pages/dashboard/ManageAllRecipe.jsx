@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import RecipeRow from '../../components/cards/RecipeRow';
 import { Link } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 const ManageAllRecipe = () => {
   const [recipes, setRecipes] = useState();
@@ -15,6 +16,16 @@ const ManageAllRecipe = () => {
     };
     load();
   }, []);
+  const handleDeleteRecipe = async (id) => {
+    try {
+      await axios.delete(`http://localhost:3000/recipe/${id}`);
+      setRecipes(recipes.filter((recipe) => recipe.id !== id));
+      toast.success('Recipe deleted successfully');
+    } catch (error) {
+      console.error('Failed to delete recipe', error);
+      toast.error('Failed to delete recipe');
+    }
+  };
 
   return (
     <>
@@ -22,7 +33,7 @@ const ManageAllRecipe = () => {
         <h1 className="text-3xl mb-4">All Menu List</h1>
         <div className="text-sm breadcrumbs items-start">
           <ul>
-            <li className='text-red-500'>
+            <li className="text-red-500">
               <Link to={'/dashbord'}>Home</Link>
             </li>
 
@@ -40,11 +51,16 @@ const ManageAllRecipe = () => {
               <th>Price</th>
               <th>Category</th>
               <th>Action</th>
+              <th>detais</th>
             </tr>
           </thead>
           <tbody>
             {recipes?.map((recipe) => (
-              <RecipeRow key={recipe?.id} recipe={recipe} />
+              <RecipeRow
+                key={recipe?.id}
+                recipe={recipe}
+                onDelete={handleDeleteRecipe}
+              />
             ))}
           </tbody>
         </table>

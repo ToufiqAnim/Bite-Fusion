@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 
 const AddRecipe = () => {
@@ -35,7 +36,13 @@ const AddRecipe = () => {
       description,
     };
 
-    await axios.post('http://localhost:3000/recipes', recipeData);
+    try {
+      await axios.post('http://localhost:3000/recipe', recipeData);
+      toast.success('Recipe added successfully!');
+      form.reset();
+    } catch (error) {
+      toast.error('Failed to add recipe.');
+    }
   };
   return (
     <div className="w-full p-16 text-black border border-slate-300 mx-auto container">

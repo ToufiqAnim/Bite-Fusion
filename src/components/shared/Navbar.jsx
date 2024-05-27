@@ -52,10 +52,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="flex items-center gap-6 px-1">
             <li>
-              <a>All Recepies</a>
-            </li>
-            <li>
-              <Link to={'/about'}>About Us</Link>
+              <Link to={'/recipe'}>All Recipe</Link>
             </li>
             <li>
               <a>Contact Us</a>

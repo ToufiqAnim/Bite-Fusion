@@ -95,31 +95,45 @@
       "description": "Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.",
       "image": "https://www.themealdb.com/images/media/meals/xpqwuq1468237494.jpg",
       "category": 4
+    },
+    {
+      "id": "",
+      "title": "",
+      "price": "",
+      "category": "Italian",
+      "description": ""
+    },
+    {
+      "id": "",
+      "title": "",
+      "price": "",
+      "category": "Italian",
+      "description": ""
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Italian"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Indian"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Salads"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Desserts"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Mexican"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Chinese"
     }
   ]

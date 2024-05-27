@@ -1,4 +1,4 @@
-const About = () => {
+const Recipe = () => {
   return (
     <div className="bg-white text-black">
       <h1 className="text-2xl">About Page</h1>
@@ -6,4 +6,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Recipe;

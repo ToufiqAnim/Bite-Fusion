@@ -17,7 +17,7 @@ const EditRecipe = () => {
         setCategories(categoriesData?.data);
       }
 
-      const recipeData = await axios.get(`http://localhost:3000/recipes/${id}`);
+      const recipeData = await axios.get(`http://localhost:3000/recipe/${id}`);
       if (recipeData?.status === 200) {
         setRecipeDetails(recipeData?.data);
       }
@@ -43,7 +43,7 @@ const EditRecipe = () => {
       description,
     };
 
-    await axios.patch(`http://localhost:3000/recipes/${id}`, recipeData);
+    await axios.patch(`http://localhost:3000/recipe/${id}`, recipeData);
   };
   return (
     <div className="w-full px-16 text-black mx-auto container">
