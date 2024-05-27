@@ -11,7 +11,7 @@ export default function DashbaordLayout() {
   return (
     <div className="drawer lg:drawer-open bg-white">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col items-center justify-center">
+      <div className="drawer-content flex flex-col ">
         <Outlet />
         <label
           htmlFor="my-drawer-2"
