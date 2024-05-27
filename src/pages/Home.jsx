@@ -20,6 +20,7 @@ const Home = () => {
   return (
     <div className="bg-white text-black pb-10">
       <Banner />
+
       <div className="mx-16 ">
         <div className="text-center pb-14">
           <h1 className="text-4xl my-20  mb-[10px]">

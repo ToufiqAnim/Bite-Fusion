@@ -5,8 +5,11 @@ import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
-import Dashboard from '../layout/Dashboard';
+
 import PrivateRoutes from './PrivateRoutes';
+import DashboardHome from '../pages/dashboard/DashboardHome';
+import ManageAllRecipe from '../pages/dashboard/ManageAllRecipe';
+import Dashbaord from '../layout/Dashboard';
 
 const router = createBrowserRouter([
   {
@@ -39,9 +42,19 @@ const router = createBrowserRouter([
     path: '/dashbord',
     element: (
       <PrivateRoutes>
-        <Dashboard />
+        <Dashbaord />
       </PrivateRoutes>
     ),
+    children: [
+      {
+        index: true,
+        element: <DashboardHome />,
+      },
+      {
+        path: 'manage-recipes',
+        element: <ManageAllRecipe />,
+      },
+    ],
   },
 ]);
 

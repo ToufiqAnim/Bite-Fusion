@@ -70,7 +70,7 @@ export default function Register() {
             <div className="form-control mt-2">
               <button className="btn btn-primary">Login</button>
               <p className="text-center">
-                Already have an account ?{' '}
+                Already have an account ?
                 <Link to={'/login'} className="text-orange-500">
                   Login
                 </Link>
