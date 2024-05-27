@@ -52,7 +52,7 @@ export default function DashbaordLayout() {
                   </Link>
                 </li>
                 <li className="hover:bg-slate-200">
-                  <a>Sidebar Item 2</a>
+                  <Link to={'/dashbord/add-recipes'}>Add Recipes</Link>
                 </li>
               </ul>
             </div>

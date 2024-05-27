@@ -10,6 +10,7 @@ import PrivateRoutes from './PrivateRoutes';
 import DashboardHome from '../pages/dashboard/DashboardHome';
 import ManageAllRecipe from '../pages/dashboard/ManageAllRecipe';
 import Dashbaord from '../layout/Dashboard';
+import AddRecipe from '../pages/dashboard/AddRecipe';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: 'manage-recipes',
         element: <ManageAllRecipe />,
+      },
+      {
+        path: 'add-recipes',
+        element: <AddRecipe />,
       },
     ],
   },
